@@ -1,0 +1,18 @@
+.logined-component {
+}
+.re-input {
+  background-color: white;
+}
+.error-label {
+  color: red;
+  padding: 12px;
+}
+.btn-showpass {
+  left: 20px;
+  top: 0px;
+  bottom: 0px;
+  background-color: transparent !important;
+}
+.pass-input {
+  padding-left: 50px !important;
+}

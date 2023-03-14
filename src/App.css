@@ -1,5 +1,15 @@
+@import url("./assets/fonts/Mulish/static/stylesheet.css"); /* Using a url */
+
 .App {
   text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.text-mulish {
+  font-family: "Mulish";
 }
 
 .App-logo {
@@ -28,11 +38,60 @@
   color: #61dafb;
 }
 
+.open-chat {
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #fff;
+  border-width: 0px;
+
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.chat-closed {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #96000f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-closed:hover > .open-chat,
+.rsc-float-button:hover > .open-chat {
+  height: 110%;
+  width: 110%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.welcome {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .welcome {
+    height: 100%;
+  }
+  .tototo {
+    background-image: url("./assets/full_mini.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
   }
 }
